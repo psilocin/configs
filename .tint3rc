@@ -1,0 +1,48 @@
+[active]
+  id text
+  source window_title
+  forground #B084A7
+  background #EED4E8
+
+[desktops]
+  id radio
+  source workspaces
+  forground #B084A7
+  background #F1EDE1
+
+[time]
+  id text
+  source clock
+  format %T
+  forground #B084A7
+  background #E5C2B7
+
+[weather]
+  id weather
+  format %W, ▉%F (%H)
+  forground #B084A7
+  background #F1EDE1
+  type temperature
+  source Brooklyn,usa
+
+[volume]
+  id scale
+  source alsa 0 Master
+  forground #B084A7
+  background #F1EDE1
+
+[[bar]]
+  bordercolor #FEE3BD
+  background #FEE3BD
+  borderwidth 0
+  padding 3
+  margin 0
+  location top
+  left 0
+    desktops
+    active
+  right 0
+    time
+    download
+    weather
+    volume
